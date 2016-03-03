@@ -1,0 +1,11 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard"
+  ],
+  "rules": {
+    "no-unexpected-multiline": 1,
+    "no-spaced-func": 1,
+    "arrow-parens": [2, "as-needed"]
+  }
+}
