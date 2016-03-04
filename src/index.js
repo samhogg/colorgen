@@ -8,7 +8,7 @@ export default function ColorGenerator () {
   const scale = d3Scale.scaleRainbow()
   return {
     next: () => ({
-      value: scale(Math.abs(Math.sin(GOLDEN_ANGLE * ++i))),
+      value: scale(Math.abs(Math.cos(GOLDEN_ANGLE * ++i))),
       done: false
     })
   }
