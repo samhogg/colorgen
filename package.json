@@ -1,6 +1,6 @@
 {
   "name": "colorgen",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "generator for generating colors, yay!",
   "main": "dist/index.js",
   "directories": {
