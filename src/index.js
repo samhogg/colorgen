@@ -1,4 +1,4 @@
-import d3Scale from 'd3-scale'
+import { interpolateRainbow } from 'd3-scale'
 
 // Compute greatest average distance between n candidates and the actual array
 export function computeGreatestDistance (candidates, actual) {
@@ -27,7 +27,7 @@ export function generateRandomNumbers (n) {
 }
 
 export default function ColorGenerator () {
-  const scale = d3Scale.scaleRainbow()
+  const scale = interpolateRainbow
   let array = [0.5]
   return {
     next: () => {
