@@ -1,6 +1,9 @@
+dependencies:
+  override:
+    - echo hi
+
 test:
   override:
-    - nvm use 0.10 && npm test
-    - nvm use 0.12 && npm test
-    - nvm use 4 && npm test
-    - nvm use 5 && npm test
+    - rm -rf node_modules && nvm use 5 && npm install && npm test
+    - rm -rf node_modules && nvm use 5 && npm install && npm test
+    - rm -rf node_modules && nvm use 5 && npm install && npm test
